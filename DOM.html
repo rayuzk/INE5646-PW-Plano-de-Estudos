@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estude.com - Árvore DOM</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Estude.com - Mapeamento da Árvore DOM</h1>
+    <p>Representação hierárquica dos nós do documento HTML principal (index.html).</p>
+    <nav>
+        <a href="index.html">← Voltar para o Projeto Principal</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Estrutura Hierárquica do Documento (DOM)</h2>
+        <p>Abaixo está o mapeamento de nós pai e filho da página principal:</p>
+        
+        <ul>
+            <li><strong>Document</strong>
+                <ul>
+                    <li><strong>html</strong> (lang="pt-BR")
+                        <ul>
+                            <li><strong>head</strong>
+                                <ul>
+                                    <li>meta (charset="UTF-8")</li>
+                                    <li>meta (viewport)</li>
+                                    <li>title</li>
+                                    <li>link (favicon)</li>
+                                    <li>link (CSS)</li>
+                                </ul>
+                            </li>
+                            <li><strong>body</strong>
+                                <ul>
+                                    <li><strong>header</strong>: h1, p (x2), nav (a x7)</li>
+                                    <li><strong>main</strong>
+                                        <ul>
+                                            <li>section (#perfil): h2, p, form (label, input)</li>
+                                            <li>section (#disciplinas): h2, p</li>
+                                            <li>section (#provas): h2, p</li>
+                                            <li>section (#trabalhos): h2, p</li>
+                                            <li>section (#leituras): h2</li>
+                                            <li>section (#descricao): h2, p (x2), h3, ul (li x4)</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>aside</strong>: h2, h3 (x5), ul, p, a</li>
+                                    <li><strong>footer</strong>: h2, p, address (a x2), p (a x2)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>INE5646 - Programação para Web | UFSC</p>
+</footer>
+
+</body>
+</html>
